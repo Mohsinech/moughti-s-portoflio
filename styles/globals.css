@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Raleway fonts */
+@font-face {
+  font-family: "moughit";
+  src: url("../public/raleway/Raleway-SemiBold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "moughit";
+  src: url("../public/raleway/Raleway-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "moughit";
+  src: url("../public/raleway/Raleway-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "moughit";
+  src: url("../public/raleway/Raleway-Light.ttf");
+  font-weight: 200;
+}

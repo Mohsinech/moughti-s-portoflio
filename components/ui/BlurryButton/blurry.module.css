@@ -1,0 +1,12 @@
+.blurryButton {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "moughit", sans-serif;
+}

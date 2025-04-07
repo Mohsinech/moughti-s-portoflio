@@ -1,3 +1,4 @@
+import { Header } from "@/components/layouts";
 import "@/styles/globals.css";
 
 export default function RootLayout({ children }) {
@@ -5,8 +6,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>Abdelmoughite Naoumi — Cybersecurity Engineering Student</title>
+        <link rel="icon" type="image/png" href="/assets/images/logo.png" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./button.module.css";
+import Link from "next/link";
 
-const Button = ({ label }) => {
+const Button = ({ label, href }) => {
   return (
     <div className={styles.button} data-tooltip="Size: 5Mb">
       <div className={styles.buttonWrapper}>

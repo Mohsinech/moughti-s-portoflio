@@ -1,0 +1,15 @@
+.skill_btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "moughit", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.skill_btn:hover {
+  background-color: #5e41de4d;
+}

@@ -45,10 +45,10 @@
   border-radius: 0.45em;
   font-family: "moughit", sans-serif;
   transition: background 0.3s;
-  cursor: pointer;
   width: fit-content;
   padding: 0.5rem 1rem;
   color: var(--button-color);
+  cursor: pointer;
 }
 
 .skill_data button:hover {

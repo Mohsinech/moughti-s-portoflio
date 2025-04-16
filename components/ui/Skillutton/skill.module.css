@@ -1,9 +1,8 @@
-
-.skill_btn{
+.skill_btn {
   padding: 10px 20px;
   border: none;
   font-size: 17px;
-  color: #fff; 
+  color: #fff;
   border-radius: 10px;
   border: 2px solid #ceb7ff;
   box-sizing: border-box;
@@ -18,11 +17,9 @@
 
   color: transparent;
   text-shadow: 0 0 0 #fff;
+  cursor: pointer;
 }
 
 .skill_btn:hover {
-  box-shadow: 0 0 5px #ceb7ff,
-              0 0 25px #ceb7ff,
-              0 0 50px #ceb7ff,
-              0 0 100px #ceb7ff;
+  box-shadow: 0 10px 20px rgba(206, 183, 255, 0.8);
 }

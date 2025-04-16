@@ -23,8 +23,8 @@ const Hero = () => {
         </div>
         <div className={styles.socials}>
           {socialData.map((social) => (
-            <Link href={social.href} key={social.id}>
-              <img src={social.icon} alt={social.name} />
+            <Link href={social.href} key={social.id} >
+              <img src={social.icon} alt={social.name} label={social.name}/>
             </Link>
           ))}
         </div>

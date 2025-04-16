@@ -1,15 +1,28 @@
-.skill_btn {
-  border: 1px solid #fff;
-  color: #fff;
-  font-family: "moughit", sans-serif;
-  font-size: 1.2rem;
+
+.skill_btn{
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff; 
+  border-radius: 10px;
+  border: 2px solid #ceb7ff;
+  box-sizing: border-box;
+  letter-spacing: 4px;
+  font-weight: 700;
   text-transform: uppercase;
-  padding: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: transparent;
+
+  transition: 0.5s;
+  transition-property: box-shadow;
+  min-height: 5rem;
+
+  color: transparent;
+  text-shadow: 0 0 0 #fff;
 }
 
 .skill_btn:hover {
-  background-color: #5e41de4d;
+  box-shadow: 0 0 5px #ceb7ff,
+              0 0 25px #ceb7ff,
+              0 0 50px #ceb7ff,
+              0 0 100px #ceb7ff;
 }

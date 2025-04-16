@@ -23,6 +23,7 @@ const Skills = () => {
       <BlurryButton label="🧐 My Skills " />
 
       <div className={styles.skill_grid}>
+<<<<<<< HEAD
         <SkillButton skill="AWS" onClick={() => handleSkillClick("AWS")} />
         <SkillButton
           skill="DevSecOps"
@@ -65,6 +66,20 @@ const Skills = () => {
           skill="Certifications Path"
           onClick={() => handleSkillClick("certpath")}
         />
+=======
+      <SkillButton skill="AWS" onClick={() => handleSkillClick("AWS")} />
+      <SkillButton skill="DevSecOps" onClick={() => handleSkillClick("DevSecOps")} />
+      <SkillButton skill="Web Security" onClick={() => handleSkillClick("WebSec")} />
+      <SkillButton skill="Linux" onClick={() => handleSkillClick("Linux")} />
+      <SkillButton skill="React & Next.js" onClick={() => handleSkillClick("ReactNext")} />
+      <SkillButton skill="Cloud-Native Apps" onClick={() => handleSkillClick("CloudNative")} />
+      <SkillButton skill="Study Roadmap" onClick={() => handleSkillClick("StudyPlan")} />
+      <SkillButton skill="AI in Cybersecurity" onClick={() => handleSkillClick("ai-cyber")} />
+      <SkillButton skill="Industrial Security" onClick={() => handleSkillClick("industry4")} />
+      <SkillButton skill="Offensive Labs" onClick={() => handleSkillClick("offensivelabs")} />
+      <SkillButton skill="ERP Security (Odoo)" onClick={() => handleSkillClick("odooerp")} />
+      <SkillButton skill="Certifications Path" onClick={() => handleSkillClick("certpath")} />
+>>>>>>> 52d8f80f5fd4aa1448683eb806435c24cf416d62
       </div>
 
       <AnimatePresence mode="wait">

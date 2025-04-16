@@ -1,0 +1,9 @@
+.project {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-image: url("/assets/images/about-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

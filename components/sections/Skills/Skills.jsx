@@ -23,18 +23,48 @@ const Skills = () => {
       <BlurryButton label="🧐 My Skills " />
 
       <div className={styles.skill_grid}>
-      <SkillButton skill="AWS" onClick={() => handleSkillClick("AWS")} />
-      <SkillButton skill="DevSecOps" onClick={() => handleSkillClick("DevSecOps")} />
-      <SkillButton skill="Web Security" onClick={() => handleSkillClick("WebSecurity")} />
-      <SkillButton skill="Linux" onClick={() => handleSkillClick("Linux")} />
-      <SkillButton skill="React & Next.js" onClick={() => handleSkillClick("React&Next.js")} />
-      <SkillButton skill="Cloud-Native Apps" onClick={() => handleSkillClick("Cloud-NativeApps")} />
-      <SkillButton skill="Study Roadmap" onClick={() => handleSkillClick("StudyRoadmap")} />
-      <SkillButton skill="AI in Cybersecurity" onClick={() => handleSkillClick("AIinCybersecurity")} />
-      <SkillButton skill="Industrial Security" onClick={() => handleSkillClick("IndustrialSecurity")} />
-      <SkillButton skill="Offensive Labs" onClick={() => handleSkillClick("OffensiveLabs")} />
-      <SkillButton skill="ERP Security (Odoo)" onClick={() => handleSkillClick("ERPSecurity(Odoo)")} />
-      <SkillButton skill="Certifications Path" onClick={() => handleSkillClick("CertificationsPath")} />
+        <SkillButton skill="AWS" onClick={() => handleSkillClick("AWS")} />
+        <SkillButton
+          skill="DevSecOps"
+          onClick={() => handleSkillClick("DevSecOps")}
+        />
+        <SkillButton
+          skill="Web Security"
+          onClick={() => handleSkillClick("websec")}
+        />
+        <SkillButton skill="Linux" onClick={() => handleSkillClick("Linux")} />
+        <SkillButton
+          skill="React & Next.js"
+          onClick={() => handleSkillClick("reactnext")}
+        />
+        <SkillButton
+          skill="Cloud-Native Apps"
+          onClick={() => handleSkillClick("cloudnative")}
+        />
+        <SkillButton
+          skill="Study Roadmap"
+          onClick={() => handleSkillClick("studyplan")}
+        />
+        <SkillButton
+          skill="AI in Cybersecurity"
+          onClick={() => handleSkillClick("ai-cyber")}
+        />
+        <SkillButton
+          skill="Industrial Security"
+          onClick={() => handleSkillClick("industry4")}
+        />
+        <SkillButton
+          skill="Offensive Labs"
+          onClick={() => handleSkillClick("offensivelabs")}
+        />
+        <SkillButton
+          skill="ERP Security (Odoo)"
+          onClick={() => handleSkillClick("odooerp")}
+        />
+        <SkillButton
+          skill="Certifications Path"
+          onClick={() => handleSkillClick("certpath")}
+        />
       </div>
 
       <AnimatePresence mode="wait">

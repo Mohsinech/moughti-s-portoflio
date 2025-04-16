@@ -11,7 +11,13 @@
   flex-direction: column;
   gap: 1.5rem;
 }
-
+.abimage {
+  width: 397px;
+  height: 397px;
+  margin-left: 44px;
+  position: relative;
+  z-index: 1;
+}
 .about_content {
   display: flex;
   flex-direction: column;

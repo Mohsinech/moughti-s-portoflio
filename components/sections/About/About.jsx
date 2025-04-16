@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section className={styles.about}>
+      <div className={styles.abimage}>
+        <img src="/assets/images/aboutMe.png" alt="me" />
+      </div>
       <BlurryButton label="🧐 About me " />
       <div className={styles.about_content}>
         <div className={styles.p}>

@@ -1,5 +1,5 @@
 "use client";
-
+import { createAnimatable, utils } from 'animejs';
 import React from "react";
 import styles from "./hero.module.css";
 import { BlurryButton } from "@/components/ui";
@@ -7,10 +7,11 @@ import { motion } from "framer-motion";
 import { socialData } from "@/constants/data";
 import Link from "next/link";
 
+
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      {/* Content */}
+              <div className="waving-hand" style={{ fontSize: "2.5rem", position: "absolute" }}>👋</div>
       <div className={styles.content}>
         <BlurryButton label="👋 Hello" />
         <div className={styles.titles}>

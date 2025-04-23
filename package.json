@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animejs": "^4.0.1",
     "framer-motion": "^12.6.3",
     "lenis": "^1.2.3",
     "next": "15.2.4",

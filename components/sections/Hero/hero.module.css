@@ -12,6 +12,12 @@
   position: relative;
   z-index: -1;
 }
+.wavingHand {
+  font-size: 2.5rem;
+  cursor: default;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
 
 .content {
   display: flex;

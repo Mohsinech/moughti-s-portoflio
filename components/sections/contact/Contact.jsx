@@ -19,7 +19,7 @@ const Contact = () => {
             <input required name="Subject" id="Subject" type="text" />
           </div>
           <div className={styles["form-group"]}>
-            <label htmlFor="textarea">How Can We Help You?</label>
+            <label htmlFor="textarea">How Can I Help You?</label>
             <textarea
               required
               cols="50"

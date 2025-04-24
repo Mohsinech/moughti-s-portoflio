@@ -12,6 +12,7 @@
     "animejs": "^4.0.1",
     "framer-motion": "^12.6.3",
     "lenis": "^1.2.3",
+    "moughit": "file:",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

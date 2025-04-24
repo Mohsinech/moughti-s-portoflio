@@ -9,14 +9,14 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  padding: 2rem;
   position: relative;
 }
 
 /* Skill Grid */
 .skill_grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column;
+
   gap: 2rem;
 }
 

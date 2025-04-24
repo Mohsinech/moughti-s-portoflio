@@ -18,23 +18,22 @@ const About = () => {
         <BlurryButton label="🧐 About me " />
         <div className={styles.about_content}>
           <div className={styles.p}>
-            <p>
-              👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me
-              chamar apenas de Henrique. Prazer!
+          <p>
+          👋 Hi there! 
             </p>
             <p>
-              👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com
-              JavaScript, React JS e Typescript.
+            💼 I'm an aspiring cybersecurity engineer with a strong foundation in cloud and digital trust.
             </p>
             <p>
-              🎓 Graduado em Análise e Desenvolvimento de Sistemas pela Fatec de
-              São José dos Campos
+            🧠 Passionate about solving complex problems through innovative tech solutions.
             </p>
             <p>
-              💡 Interesses em desenvolvimento Front-end com React, React
-              Native, VueJS e UX/UI Design.
+            📈 Focused on performance optimization, system resilience, and secure architecture.
             </p>
-            <p>🚀 Tentando ser um pouquinho melhor do que ontem todos dias.</p>
+            <p>
+            🎯 Goal-driven, adaptable, and committed to continuous professional growth.
+            </p>
+            <p>📚 Currently pursuing advanced certifications to deepen expertise and expand impact.</p>
           </div>
         </div>
       </div>

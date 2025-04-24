@@ -15,7 +15,7 @@ const GalaxyBackground = () => {
     canvas.height = height;
 
     const galaxyColors = ['#ffffff', '#aaaaff', '#d8b4fe', '#9f7aea']; // white, light blue, violet, purple
-    const stars = Array.from({ length: 200 }, () => ({
+    const stars = Array.from({ length: 250 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
       size: Math.random() * 1.5 + 0.5,
@@ -38,7 +38,7 @@ const GalaxyBackground = () => {
     };
 
     setInterval(() => {
-      if (Math.random() < 0.3) createShootingStar();
+      if (Math.random() < 0.5) createShootingStar();
     }, 2500);
 
     const animate = () => {

@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  padding: 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   z-index: 0;
-  gap: 3rem;
+  gap: 6rem;
 }
 
 .left {
@@ -29,7 +29,6 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
-  
 }
 
 .abimage img {

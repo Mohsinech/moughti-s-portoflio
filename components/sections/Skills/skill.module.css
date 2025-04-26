@@ -1,16 +1,16 @@
 .skills {
   width: 100%;
-  height: 100vh;
-  background-image: url("/assets/images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: fit-content;
+  background-color: rgb(1, 3, 20);
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
   position: relative;
   z-index: 0;
+
+  padding: 3rem 0 5rem 0;
 }
 
 /* Skill Grid */

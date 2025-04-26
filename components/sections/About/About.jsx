@@ -4,9 +4,12 @@ import React from "react";
 import styles from "./about.module.css";
 import { BlurryButton } from "@/components/ui";
 import { motion } from "framer-motion";
+import GalaxyBackground from "@/components/effects/GalaxyBackground";
 
 const About = () => {
   return (
+    <>
+    <GalaxyBackground/>
     <section className={styles.about}>
       <div className={styles.left}>
         <div className={styles.abimage}>
@@ -38,6 +41,8 @@ const About = () => {
         </div>
       </div>
     </section>
+    </>
+
   );
 };
 

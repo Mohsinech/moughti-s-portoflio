@@ -1,12 +1,12 @@
-'use client';
-import React, { useEffect, useRef } from 'react';
+"use client";
+import React, { useEffect, useRef } from "react";
 
 const GalaxyBackground = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     const container = canvas.parentElement;
 
     let width = container.offsetWidth;
@@ -14,7 +14,8 @@ const GalaxyBackground = () => {
     canvas.width = width;
     canvas.height = height;
 
-    const galaxyColors = ['#ffffff', '#aaaaff', '#d8b4fe', '#9f7aea']; // white, light blue, violet, purple
+    const galaxyColors = ["#ffffff", "#aaaaff", "#d8b4fe", "#9f7aea"];
+
     const stars = Array.from({ length: 250 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -41,6 +42,58 @@ const GalaxyBackground = () => {
       if (Math.random() < 0.5) createShootingStar();
     }, 2500);
 
+    const galaxies = Array.from({ length: 5 }, () => {
+      const radius = 100 + Math.random() * 50;
+      const surroundingStars = Array.from(
+        { length: 5 + Math.floor(Math.random() * 5) },
+        () => ({
+          angle: Math.random() * Math.PI * 2,
+          distance: radius + 20 + Math.random() * 30,
+          size: 1 + Math.random(),
+          speed: 0.001 + Math.random() * 0.002,
+          color: "#9f7aea",
+        })
+      );
+
+      return {
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius,
+        rotation: Math.random() * Math.PI * 2,
+        speed: (Math.random() - 0.5) * 0.001,
+        color: galaxyColors[Math.floor(Math.random() * galaxyColors.length)],
+        surroundingStars,
+      };
+    });
+
+    const drawGalaxy = (gx) => {
+      ctx.save();
+      ctx.translate(gx.x, gx.y);
+      ctx.rotate(gx.rotation);
+
+      const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, gx.radius);
+      gradient.addColorStop(0, `${gx.color}cc`);
+      gradient.addColorStop(0.4, `${gx.color}66`);
+      gradient.addColorStop(1, "transparent");
+
+      ctx.fillStyle = gradient;
+      ctx.beginPath();
+      ctx.arc(0, 0, gx.radius, 0, Math.PI * 2);
+      ctx.fill();
+
+      for (const star of gx.surroundingStars) {
+        const sx = Math.cos(star.angle) * star.distance;
+        const sy = Math.sin(star.angle) * star.distance;
+        ctx.beginPath();
+        ctx.arc(sx, sy, star.size, 0, Math.PI * 2);
+        ctx.fillStyle = star.color;
+        ctx.fill();
+        star.angle += star.speed;
+      }
+
+      ctx.restore();
+    };
+
     const animate = () => {
       ctx.clearRect(0, 0, width, height);
 
@@ -58,6 +111,12 @@ const GalaxyBackground = () => {
         ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
         ctx.fillStyle = star.color;
         ctx.fill();
+      }
+
+      // Draw galaxies
+      for (const gx of galaxies) {
+        drawGalaxy(gx);
+        gx.rotation += gx.speed;
       }
 
       // Draw shooting stars
@@ -87,9 +146,9 @@ const GalaxyBackground = () => {
       canvas.height = height;
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -97,13 +156,13 @@ const GalaxyBackground = () => {
     <canvas
       ref={canvasRef}
       style={{
-        position: 'absolute',
+        position: "absolute",
         top: 0,
         left: 0,
-        zIndex: 2,
-        pointerEvents: 'none',
-        width: '100%',
-        height: '100%',
+        zIndex: 1,
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
       }}
     />
   );

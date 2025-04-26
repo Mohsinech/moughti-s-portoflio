@@ -10,6 +10,7 @@
   font-weight: 700;
   text-transform: uppercase;
   background: transparent;
+  overflow: visible;
 
   transition: 0.5s;
   transition-property: box-shadow;

@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <>
-    <GalaxyBackground />
+    
     <section className={styles.hero}>
       {/* Floating waving hand */}
       <div
@@ -69,7 +69,9 @@ const Hero = () => {
             pointerEvents: "none",
             zIndex: 999,
           }}
+          
         />
+        
       ))}
 
       <div className={styles.content}>
@@ -105,6 +107,7 @@ const Hero = () => {
         <img src="/assets/images/me.png" alt="hero" />
       </div>
     </section>
+    <GalaxyBackground />
     </>
   );
 };

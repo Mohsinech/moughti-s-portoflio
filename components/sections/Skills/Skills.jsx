@@ -11,6 +11,7 @@ const Skills = () => {
       <div
         style={{
           padding: "2rem",
+          overflow:"visible"
         }}
       >
         <BlurryButton label="🧐 My Skills " />

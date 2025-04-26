@@ -5,7 +5,7 @@ import { BlurryButton } from "@/components/ui";
 import { motion } from "framer-motion";
 import { socialData } from "@/constants/data";
 import Link from "next/link";
-import GalaxyBackground from "../../effects/GalaxyBackground";
+import GalaxyBackground from "@/components/effects/GalaxyBackground";
 
 const Hero = () => {
   const handRef = useRef(null);
@@ -34,80 +34,85 @@ const Hero = () => {
 
   return (
     <>
-    
-    <section className={styles.hero}>
-      {/* Floating waving hand */}
-      <div
-        ref={handRef}
-        style={{
-          fontSize: "2.5rem",
-          position: "fixed",
-          left: 0,
-          top: 0,
-          pointerEvents: "none",
-          zIndex: 1000,
-          transform: "translate(-50%, -50%)",
-          transition: "transform 0.05s linear",
-        }}
-      >
-        👋
-      </div>
-
-      {/* Trail elements */}
-      {trail.map((point, index) => (
+      
+      <section className={styles.hero}>
+        {/* Floating waving hand */}
         <div
-          key={index}
+          ref={handRef}
           style={{
+            fontSize: "2.5rem",
             position: "fixed",
-            left: point.x,
-            top: point.y,
-            width: "10px",
-            height: "10px",
-            borderRadius: "50%",
-            backgroundColor: "rgba(0,0,0,0.1)",
-            transform: "translate(-50%, -50%)",
+            left: 0,
+            top: 0,
             pointerEvents: "none",
-            zIndex: 999,
+            zIndex: 1000,
+            transform: "translate(-50%, -50%)",
+            transition: "transform 0.05s linear",
           }}
-          
-        />
-        
-      ))}
-
-      <div className={styles.content}>
-        <BlurryButton label="👋 Hello" />
-        <div className={styles.titles}>
-          <motion.h1>Abdelmoughite</motion.h1>
-          <motion.h1>Naoumi</motion.h1>
-        </div>
-        <div className={styles.career}>
-          <h2>CyberSecurity — Cloud Computing</h2>
-          <h3>Building Secure & Scalable Systems</h3>
-        </div>
-        <div className={styles.socials}>
-          {socialData.map((social) => (
-            <Link href={social.href} key={social.id}>
-              <img src={social.icon} alt={social.name} />
-            </Link>
-          ))}
+        >
+          👋
         </div>
 
-        <div className={styles.quick}>
-          <h2>Quick Access paths</h2>
-          <ul>
-            <li><button>01/ About</button></li>
-            <li><button>02/ Learning pathway</button></li>
-            <li><button>03/ Certifications</button></li>
-            <li><button>04/ Studies</button></li>
-          </ul>
-        </div>
-      </div>
+        {/* Trail elements */}
+        {trail.map((point, index) => (
+          <div
+            key={index}
+            style={{
+              position: "fixed",
+              left: point.x,
+              top: point.y,
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              transform: "translate(-50%, -50%)",
+              pointerEvents: "none",
+              zIndex: 999,
+            }}
+          />
+        ))}
 
-      <div className={styles.heroImage}>
-        <img src="/assets/images/me.png" alt="hero" />
-      </div>
-    </section>
-    <GalaxyBackground />
+        <div className={styles.content}>
+          <BlurryButton label="👋 Hello" />
+          <div className={styles.titles}>
+            <motion.h1>Abdelmoughite</motion.h1>
+            <motion.h1>Naoumi</motion.h1>
+          </div>
+          <div className={styles.career}>
+            <h2>CyberSecurity — Cloud Computing</h2>
+            <h3>Building Secure & Scalable Systems</h3>
+          </div>
+          <div className={styles.socials}>
+            {socialData.map((social) => (
+              <Link href={social.href} key={social.id}>
+                <img src={social.icon} alt={social.name} />
+              </Link>
+            ))}
+          </div>
+
+          <div className={styles.quick}>
+            <h2>Quick Access paths</h2>
+            <ul>
+              <li>
+                <button>01/ About</button>
+              </li>
+              <li>
+                <button>02/ Learning pathway</button>
+              </li>
+              <li>
+                <button>03/ Certifications</button>
+              </li>
+              <li>
+                <button>04/ Studies</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.heroImage}>
+          <img src="/assets/images/me.png" alt="hero" />
+        </div>
+      </section>
     </>
   );
 };

@@ -1,7 +1,7 @@
 .contact {
   width: 100%;
   height: 100vh;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: rgba(0, 4, 38, 1);
   background-size: cover;
   background-position: center;
@@ -11,15 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* This keeps your title and form stacked */
-  gap: 2rem; /* Add some spacing between the button and the form */
+  flex-direction: column;
+  gap: 5rem;
 }
-
 
 .form-container {
   width: 50%;
   background: linear-gradient(rgba(0, 4, 38, 1), rgba(0, 4, 38, 1)) padding-box,
-              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 20px 24px;
   font-size: 20px;
@@ -38,7 +37,6 @@
   0% {
     background-position: 0% 50%;
   }
-  
 
   50% {
     background-position: 100% 50%;
@@ -65,10 +63,10 @@
 
 .form-container button:active {
   color: #ffffff;
-  background: #7B4AE2;
-  border: 1px solid #7B4AE2;
+  background: #7b4ae2;
+  border: 1px solid #7b4ae2;
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px #7B4AE2, 0 0 20px #7B4AE2, 0 0 50px #7B4AE2,
+  box-shadow: 0 0 5px #7b4ae2, 0 0 20px #7b4ae2, 0 0 50px #7b4ae2,
     0 0 100px #e81cff;
 }
 
@@ -87,6 +85,9 @@
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
+
+  /* color: ; */
+
   color: #ffffff;
   font-weight: 600;
   font-size: 12px;
@@ -98,7 +99,7 @@
   border-radius: 8px;
   color: #fff;
   font-family: inherit;
-  background-color: #7B4AE2;
+  background-color: #7b4ae2;
   border: 1px solid #414141;
   font-size: 15px;
 }
@@ -110,7 +111,7 @@
   resize: none;
   color: #fff;
   height: 96px;
-  border: 1px solid #7B4AE2;
+  border: 1px solid #7b4ae2;
   background-color: transparent;
   font-family: inherit;
 }
@@ -121,12 +122,12 @@
 
 .form-container .form-group input:focus {
   outline: none;
-  border-color: #7B4AE2;
+  border-color: #7b4ae2;
 }
 
 .form-container .form-group textarea:focus {
   outline: none;
-  border-color: #7B4AE2;
+  border-color: #7b4ae2;
 }
 
 .form-container .form-submit-btn {
@@ -139,17 +140,16 @@
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
-  color: #7B4AE2;
+  color: #7b4ae2;
   text-shadow: none;
   background: transparent;
   cursor: pointer;
   box-shadow: transparent;
-  border: 1px solid #7B4AE2;
+  border: 1px solid #7b4ae2;
   transition: 0.5s ease;
 
   transition: 0.5s;
   transition-property: box-shadow;
-  min-height: 5rem;
 
   color: transparent;
   text-shadow: 0 0 0 #fff;
@@ -157,7 +157,7 @@
 }
 
 .form-container .form-submit-btn:hover {
-  background-color: #7B4AE2;
+  background-color: #7b4ae2;
   color: #fff;
   border-color: #fff;
 }

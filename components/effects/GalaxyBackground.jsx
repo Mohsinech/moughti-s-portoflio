@@ -1,12 +1,12 @@
-'use client';
-import React, { useEffect, useRef } from 'react';
+"use client";
+import React, { useEffect, useRef } from "react";
 
 const GalaxyBackground = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     const container = canvas.parentElement;
 
     let width = container.offsetWidth;
@@ -14,7 +14,7 @@ const GalaxyBackground = () => {
     canvas.width = width;
     canvas.height = height;
 
-    const galaxyColors = ['#ffffff', '#aaaaff', '#d8b4fe', '#9f7aea'];
+    const galaxyColors = ["#ffffff", "#aaaaff", "#d8b4fe", "#9f7aea"];
 
     const stars = Array.from({ length: 250 }, () => ({
       x: Math.random() * width,
@@ -44,13 +44,16 @@ const GalaxyBackground = () => {
 
     const galaxies = Array.from({ length: 5 }, () => {
       const radius = 100 + Math.random() * 50;
-      const surroundingStars = Array.from({ length: 5 + Math.floor(Math.random() * 5) }, () => ({
-        angle: Math.random() * Math.PI * 2,
-        distance: radius + 20 + Math.random() * 30,
-        size: 1 + Math.random(),
-        speed: 0.001 + Math.random() * 0.002,
-        color: '#9f7aea',
-      }));
+      const surroundingStars = Array.from(
+        { length: 5 + Math.floor(Math.random() * 5) },
+        () => ({
+          angle: Math.random() * Math.PI * 2,
+          distance: radius + 20 + Math.random() * 30,
+          size: 1 + Math.random(),
+          speed: 0.001 + Math.random() * 0.002,
+          color: "#9f7aea",
+        })
+      );
 
       return {
         x: Math.random() * width,
@@ -71,7 +74,7 @@ const GalaxyBackground = () => {
       const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, gx.radius);
       gradient.addColorStop(0, `${gx.color}cc`);
       gradient.addColorStop(0.4, `${gx.color}66`);
-      gradient.addColorStop(1, 'transparent');
+      gradient.addColorStop(1, "transparent");
 
       ctx.fillStyle = gradient;
       ctx.beginPath();
@@ -143,9 +146,9 @@ const GalaxyBackground = () => {
       canvas.height = height;
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -153,13 +156,13 @@ const GalaxyBackground = () => {
     <canvas
       ref={canvasRef}
       style={{
-        position: 'absolute',
+        position: "absolute",
         top: 0,
         left: 0,
-        zIndex: 0,
-        pointerEvents: 'none',
-        width: '100%',
-        height: '100%',
+        zIndex: 1,
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
       }}
     />
   );

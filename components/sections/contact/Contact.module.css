@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 0;
 
   display: flex;
   justify-content: center;
@@ -63,7 +64,12 @@
 }
 
 .form-container button:active {
-  scale: 0.95;
+  color: #ffffff;
+  background: #7B4AE2;
+  border: 1px solid #7B4AE2;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #7B4AE2, 0 0 20px #7B4AE2, 0 0 50px #7B4AE2,
+    0 0 100px #e81cff;
 }
 
 .form-container .form {
@@ -81,7 +87,7 @@
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: ;
+  color: #ffffff;
   font-weight: 600;
   font-size: 12px;
 }
@@ -92,7 +98,7 @@
   border-radius: 8px;
   color: #fff;
   font-family: inherit;
-  background-color: #717171;
+  background-color: #7B4AE2;
   border: 1px solid #414141;
   font-size: 15px;
 }
@@ -104,7 +110,7 @@
   resize: none;
   color: #fff;
   height: 96px;
-  border: 1px solid #414141;
+  border: 1px solid #7B4AE2;
   background-color: transparent;
   font-family: inherit;
 }
@@ -115,31 +121,31 @@
 
 .form-container .form-group input:focus {
   outline: none;
-  border-color: #e81cff;
+  border-color: #7B4AE2;
 }
 
 .form-container .form-group textarea:focus {
   outline: none;
-  border-color: #e81cff;
+  border-color: #7B4AE2;
 }
 
 .form-container .form-submit-btn {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   align-self: center;
-  padding: 10px 20px;
-  border: none;
-  width: 50%;
-  font-size: 17px;
-  color: #fff;
-  border-radius: 10px;
-  border: 2px solid #ceb7ff;
-  box-sizing: border-box;
-  letter-spacing: 4px;
-  font-weight: 700;
+  padding: 10px 30px;
   text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #7B4AE2;
+  text-shadow: none;
   background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #7B4AE2;
+  transition: 0.5s ease;
 
   transition: 0.5s;
   transition-property: box-shadow;
@@ -151,7 +157,7 @@
 }
 
 .form-container .form-submit-btn:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #7B4AE2;
+  color: #fff;
   border-color: #fff;
 }

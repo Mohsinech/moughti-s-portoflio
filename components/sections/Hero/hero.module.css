@@ -11,7 +11,7 @@
   padding: 2rem;
   position: relative;
   overflow: hidden; 
-  z-index: 1;
+  z-index: -1;
 }
 
 .cursorHand {
@@ -47,6 +47,7 @@
   flex-direction: column;
   gap: 1.5rem;
   padding-top: 2rem;
+  z-index: 10;
 }
 
 .titles h1 {
@@ -54,12 +55,14 @@
   font-size: 5rem;
   font-family: "moughit", sans-serif;
   line-height: 1;
+  z-index: 10;
 }
 
 .career {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  z-index: 10;
 }
 
 .career h2 {
@@ -67,6 +70,7 @@
   font-size: 1.5rem;
   font-family: "moughit", sans-serif;
   line-height: 1;
+  z-index: 10;
 }
 
 .career h3 {
@@ -74,18 +78,21 @@
   font-size: 1.2rem;
   font-family: "moughit", sans-serif;
   line-height: 1;
+  z-index: 10;
 }
 
 .socials {
   padding-top: 1rem;
   display: flex;
   gap: 1rem;
+  z-index: 10;
 }
 
 .socials img {
   width: 24px;
   height: 24px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .quick {
@@ -94,6 +101,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  z-index: 10;
 }
 
 .quick h2 {
@@ -103,18 +111,21 @@
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.025rem;
+  z-index: 10;
 }
 
 .quick ul {
   display: flex;
   align-items: center;
   gap: 1rem;
+  z-index: 10;
 }
 
 .quick ul li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  z-index: 10;
 }
 
 .quick ul li > button {
@@ -127,6 +138,7 @@
   letter-spacing: 0.025rem;
   cursor: pointer;
   border-radius: 5rem;
+  z-index: 100;
 }
 
 .heroImage {
@@ -135,5 +147,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  z-index: 999;
 }
